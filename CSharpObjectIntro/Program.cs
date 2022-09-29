@@ -7,6 +7,7 @@
         OOPExercises.Run();
 
         Console.WriteLine("Press enter to exit the program");
+        Console.WriteLine("");
         Console.ReadLine();
     }
 }
