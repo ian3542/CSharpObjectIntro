@@ -32,9 +32,15 @@ namespace CSharpObjectIntro.Classes.Diary
             return diaryEvents.Count(diaryEvent => diaryEvent.Date == date);
         }
 
+
+
         // Add a new method called check morning events
 
-
+        public int CheckMorningEvents(DateOnly date)
+        {
+            TimeOnly noon = new TimeOnly(12,00);
+            return diaryEvents.Count(diaryEvent => diaryEvent.Date == date && diaryEvent.Time < noon);
+        }
 
     }
 }
